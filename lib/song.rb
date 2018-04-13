@@ -19,7 +19,7 @@ class Song
 
   def self.artists
     @@artists.collect do |performer|
-      if @@artists.none? {|name| name==performer}
+      if @@artists.none? {|name| name!=performer}
         performer
       end
     end

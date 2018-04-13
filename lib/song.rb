@@ -28,7 +28,7 @@ class Song
     #end
     #artist_array
 
-    #@@artists.uniq#select {|performer| }
+    @@artists.uniq#select {|performer| }
     #Is it cheating to use the uniq method?
     #It makes it so much easier to get an array
     #of unique values rather than iterating

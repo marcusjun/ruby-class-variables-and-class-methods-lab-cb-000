@@ -20,7 +20,8 @@ class Song
   def self.artists
     #artist_array=[]
     artist_array=@@artists.collect do |performer|
-      if @@artists.none? {|name| name==performer}
+      #if @@artists.none? {|name| name==performer}
+      if @@artists.all? {|name| name!=performer}
         #artist_array<<performer
         performer
       end

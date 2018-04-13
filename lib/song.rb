@@ -18,8 +18,8 @@ class Song
   end
 
   def self.artists
-    artist_array=[]
-    @@artists.collect do |performer|
+    #artist_array=[]
+    artist_array=@@artists.collect do |performer|
       if @@artists.none? {|name| name==performer}
         artist_array<<performer
       end

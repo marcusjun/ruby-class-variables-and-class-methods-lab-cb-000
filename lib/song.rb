@@ -18,11 +18,11 @@ class Song
   end
 
   def self.artists
-    #@@artists.collect do |performer|
-      #if @@artists.none? {|name| name==performer}
-        #performer
-      #end
-    #end
+    @@artists.collect do |performer|
+      if @@artists.none? {|name| name==performer}
+        performer
+      end
+    end
 
     #@@artists.uniq#select {|performer| }
     #Is it cheating to use the uniq method?

@@ -21,7 +21,8 @@ class Song
     #artist_array=[]
     artist_array=@@artists.collect do |performer|
       if @@artists.none? {|name| name==performer}
-        artist_array<<performer
+        #artist_array<<performer
+        performer
       end
     end
     artist_array

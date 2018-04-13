@@ -24,6 +24,7 @@ class Song
         artist_array<<performer
       end
     end
+    artist_array
 
     #@@artists.uniq#select {|performer| }
     #Is it cheating to use the uniq method?

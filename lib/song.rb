@@ -18,12 +18,21 @@ class Song
   end
 
   def self.artists
-    #@@artists.collect do |performer|
+    #artist_array=[]
+    #artist_array=@@artists.collect do |performer|
       #if @@artists.none? {|name| name==performer}
+      #if @@artists.all? {|name| name!=performer}
+        #artist_array<<performer
         #performer
       #end
     #end
+    #artist_array
+
     @@artists.uniq#select {|performer| }
+    #Is it cheating to use the uniq method?
+    #It makes it so much easier to get an array
+    #of unique values rather than iterating
+    #through the array and finding unique values
 
   end
 
@@ -38,6 +47,13 @@ class Song
     @@genres.each do |genre|
       genre_hash[genre]=@@genres.select{|music_type| genre==music_type}.length
     end
+
+    genre_hash
+
+    #genre_hash=@@genres.collect do |genre|
+      #genre_hash[genre]=@@genres.select{|music_type| genre==music_type}.length
+    #end
+
       #if genre_hash.keys.none? {|music_type| music_type==genre}
         #genre_hash[genre]=index
       #else
@@ -46,7 +62,7 @@ class Song
     #end
 
     #end
-    genre_hash
+
   end
 
   def self.artist_count
